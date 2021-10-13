@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uzduotys JS</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <!-- Paspaudus ant mygtuko, puslapyje esantis div atsiranda/pranyksta -->
+    <h1 class="display-3">1 Užduotis</h1>
+    <button type="button" class="btn btn-primary" onclick="Spausti()">Spausti</button>
+
+    <div class="kubass" id="kubass"></div>
+
+    <!-- 2 užduotis Turit vieną div, su aukščiu,pločiu ir spalva bei 4 mygtukus, su kuriais galit valdyt sukurto div savybes: plotis, aukstis, centravimas ir pozicija -->
+    <section>
+    <h1 class="display-3">2 Užduotis</h1>
+    <button type="button" class="btn btn-primary" onclick="Plotis()" id=kubass>Plotis</button>
+    <button type="button" class="btn btn-secondary" onclick="Aukstis()">Aukštis</button>
+    <button type="button" class="btn btn-success" onclick="Centravimas()">Centravimas</button>
+    <button type="button" class="btn btn-danger" onclick="Pozicija()">Pozicija</button>
+    <div class="kubas" id="kubas"></div>
+    
+
+    </section>
+
+     <!-- 3 uzduotis, burgeris ir soninis meniu su animacija -->
+    
+     <section class="header">
+        <h1 class="display-3">3 Užduotis</h1>
+         <nav>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+             <div class="nav-links" id="navLinks">
+                 <i class="fa fa-times" onclick="hideMenu()"></i>
+             </div>
+         </nav>
+
+     </section>
+
+
+    <!-- 4 uzduotis, spalvu keitimas atsitiktine tvarka-->
+    <Section>
+
+        <h1 class="display-3">4 Užduotis</h1>
+        <div class="container-md" >
+            <div class="row">
+                <div class="colSm" onclick="addColor();" id="colSm1"><span id="sp1">1</span></div>
+                <div class="colSm" onclick="addColor();" id="colSm2"><span id="sp2">1</span></div>
+                <div class="colSm" onclick="addColor();" id="colSm3"><span id="sp3">1</span></div>
+            </div>
+        </div>
+
+        
+    </Section>
+
+    <!-- 5 uzduotis, lentele su kaupiamais duomenims, eiles nr, vardas pavarde amzius -->
+    <section>
+        <h1 class="display-3">5 Užduotis</h1>
+        Vardas:<input type="text" name="fname" id="fname" class="form-control" placeholder="Vardas"/><br/>
+        Pavardė:<input type="text" name="flastname" id="flastname" class="form-control" placeholder="Pavardė" /><br/>
+        Amžius:<input type="text" name="fage" id="fage" class="form-control" placeholder="Amžius"/><br/>
+
+        <button class="btn btn-primary" onclick="addRow();">Pridėti</button>
+        <br><br/>
+        <table class="table table-striped" id="Mytable">
+            <tr>
+                <th>Nr.</th>
+                <th>Vardas</th>
+                <th>Pavarde</th>
+                <th>Amžius</th>
+            </tr>
+
+            <tr>
+                <td>1</td>
+                <td>Jonas</td>
+                <td>Jonaitis</td>
+                <td>25</td>
+            </tr>
+
+            <tr>
+                <td>2</td>
+                <td>Petras</td>
+                <td>Petraitis</td>
+                <td>20</td>
+            </tr>
+
+        </table>
+
+    </section>
+    
+    
+    <script src="script.js"></script>
+</body>
+</html>

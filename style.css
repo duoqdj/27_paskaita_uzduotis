@@ -1,0 +1,85 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    max-width: 1200px;
+    padding-left: 200px;
+    padding-right: 200px;
+}
+
+/* 1 uzduotis */
+.kubass{
+    display: none;
+    position: relative;
+    background: #aaa9a9;
+    border-radius: 20px;
+    height: 150px;
+    width: 400px;
+    left: 0px;
+    text-align: center;
+    margin-top:30px;
+    margin-left: 0px;
+
+
+}
+
+/* 2 uzduotis */
+
+.kubas{
+    position: relative;
+    background: #aaa9a9;
+    border-radius: 20px;
+    height: 150px;
+    width: 400px;
+    left: 0px;
+    text-align: center;
+    margin-top:30px;
+    margin-left: 0px;
+
+
+}
+
+
+
+/* 3 uzduotis */
+.header{
+    width: 1200px;
+    height: 20vh;
+}
+.nav-links{
+    position: relative;
+    background: #f44336;
+    height: 150px;
+    width: 400px;
+    top:0;
+    left: -800px;
+    text-align: center;
+    z-index: 2;
+    transition: 1s;
+
+}
+
+/* nav .fa{
+    display: none; */
+    
+/* } */
+
+nav .fa{
+    display: block;
+    color:black;
+    margin: 10px;
+    font-size: 22px;
+    cursor:pointer;
+    
+}
+
+
+/* 4 uduotis */
+
+.colSm {
+    padding: 1rem;
+    background-color: blueviolet;
+    border:2px solid #fff;
+    text-align: center;
+    cursor: pointer;
+}
